@@ -18,8 +18,10 @@ struct iDineApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
                 .environmentObject(order)
         }
     }
+    
+    // In the background, any view that relies on an environment object will be refreshed when it announces changes. In practice that means SwiftUI will re-invoke the body property, which in turn means everything inside body will read the latest values from the environment.
 }
