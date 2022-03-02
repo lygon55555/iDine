@@ -39,6 +39,5 @@ struct ItemDetail_Previews: PreviewProvider {
         NavigationView {
             ItemDetail(item: MenuItem.example)
         }
-        
     }
 }
