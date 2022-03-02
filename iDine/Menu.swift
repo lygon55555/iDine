@@ -8,13 +8,16 @@
 
 import SwiftUI
 
-struct MenuSection: Codable {
+// Identifiable protocol has only one requirement,
+// which is that conforming types must have a property called id that can identify them uniquely.
+
+struct MenuSection: Codable, Identifiable {
     var id: UUID
     var name: String
     var items: [MenuItem]
 }
 
-struct MenuItem: Codable, Equatable {
+struct MenuItem: Codable, Equatable, Identifiable {
     var id: UUID
     var name: String
     var photoCredit: String
