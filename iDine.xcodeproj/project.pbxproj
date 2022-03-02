@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C77FAAB327CF267400A7EF42 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FAAB227CF267400A7EF42 /* ItemRow.swift */; };
+		C77FAAB527CF348700A7EF42 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FAAB427CF348700A7EF42 /* ItemDetail.swift */; };
 		C794E39727CF02380074076A /* iDineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794E39627CF02380074076A /* iDineApp.swift */; };
 		C794E39927CF02380074076A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794E39827CF02380074076A /* ContentView.swift */; };
 		C794E39B27CF02390074076A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C794E39A27CF02390074076A /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		C77FAAB227CF267400A7EF42 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		C77FAAB427CF348700A7EF42 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		C794E39327CF02380074076A /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C794E39627CF02380074076A /* iDineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineApp.swift; sourceTree = "<group>"; };
 		C794E39827CF02380074076A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				C794E39627CF02380074076A /* iDineApp.swift */,
 				C794E39827CF02380074076A /* ContentView.swift */,
 				C77FAAB227CF267400A7EF42 /* ItemRow.swift */,
+				C77FAAB427CF348700A7EF42 /* ItemDetail.swift */,
 				C794E3A427CF02840074076A /* Helper.swift */,
 				C794E41827CF02850074076A /* Menu.swift */,
 				C794E3A527CF02840074076A /* Order.swift */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77FAAB527CF348700A7EF42 /* ItemDetail.swift in Sources */,
 				C794E39927CF02380074076A /* ContentView.swift in Sources */,
 				C794E39727CF02380074076A /* iDineApp.swift in Sources */,
 				C794E41A27CF02850074076A /* Order.swift in Sources */,
