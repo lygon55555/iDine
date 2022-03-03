@@ -16,6 +16,8 @@ struct ItemDetail: View {
     // @EnvironmentObject is a property wrapper giving the automatic attachment ability,
     // also telling SwiftUI to watch the object for any changes and refresh its UI when a change announcement comes through.
     @EnvironmentObject var order: Order
+    @EnvironmentObject var favorite: Favorite
+    
     let item: MenuItem
     
     var body: some View {
@@ -32,16 +34,24 @@ struct ItemDetail: View {
                     .foregroundColor(.white)
                     .offset(x: -5, y: -5)
             }
+            
             Text(item.description)
                 .padding()
+            
             Button("Order This") {
                 order.add(item: item)
             }
             .font(.headline)
+            
             Spacer()
         }
         .navigationTitle(item.name)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            Button("Favorite") {
+                favorite.addOrRemove(item: item)
+            }
+        }
     }
 }
 

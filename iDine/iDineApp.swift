@@ -15,11 +15,13 @@ struct iDineApp: App {
     // creates a new order when the app starts, and keeps it alive regardless of what view we show.
     // @StateObject property wrapper is responsible for keeping the object alive throughout the life of our app
     @StateObject var order = Order()
+    @StateObject var favorite = Favorite()
     
     var body: some Scene {
         WindowGroup {
             MainView()
                 .environmentObject(order)
+                .environmentObject(favorite)
         }
     }
     

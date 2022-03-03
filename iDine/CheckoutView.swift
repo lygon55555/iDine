@@ -12,8 +12,10 @@ struct CheckoutView: View {
     // Rather than us asking to watch changes by hand, we instead bind our picker to a property on our struct, so that when the picker changes SwiftUI automatically changes the property too. And, just like environment objects, this will cause SwiftUI to re-invoke our body property so any changes are visible.
     
     @EnvironmentObject var order: Order
+    
     let paymentTypes: [String] = ["Cash", "Credit Card", "iDine Points"]
     let tipAmounts: [Int] = [10, 15, 20, 25, 0]
+    let pickupTimes: [String] = ["Now", "Tonight", "Tomorrow Morning"]
     
     var totalPrice: String {
         let formatter = NumberFormatter()
@@ -35,6 +37,7 @@ struct CheckoutView: View {
     @State private var loyaltyNumber: String = ""
     @State private var tipAmount: Int = 20
     @State private var showingPaymentAlert: Bool = false
+    @State private var pickupTime: String = "Now"
     
     var body: some View {
         Form {
@@ -54,6 +57,12 @@ struct CheckoutView: View {
                 // When any @State or @EnvironmentObject changes its value, SwiftUI will re-invoke the body property.
                 if addLoyaltyDetails {
                     TextField("Enter your iDine ID", text: $loyaltyNumber)
+                }
+                
+                Picker("Pickup time:", selection: $pickupTime) {
+                    ForEach(pickupTimes, id: \.self) {
+                        Text($0)
+                    }
                 }
             }
             
