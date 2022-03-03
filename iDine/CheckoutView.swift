@@ -15,6 +15,16 @@ struct CheckoutView: View {
     let paymentTypes: [String] = ["Cash", "Credit Card", "iDine Points"]
     let tipAmounts: [Int] = [10, 15, 20, 25, 0]
     
+    var totalPrice: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        
+        let total = Double(order.total)
+        let tipValue = total / 100 * Double(tipAmount)
+        
+        return formatter.string(from: NSNumber(value: total + tipValue)) ?? "$0"
+    }
+    
     // @State works similarly to @EnvironmentObject in that if the object changes it automatically refreshed our UI,
     // but it's designed for simple local values like integers and strings.
     
@@ -56,7 +66,7 @@ struct CheckoutView: View {
             }
             
             Section(header:
-                        Text("TOTAL: $100")
+                        Text("TOTAL: \(totalPrice)")
             ) {
                 Button("Confirm order") {
                     // place order
