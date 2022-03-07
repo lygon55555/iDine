@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B443EFE96797612CB62904D7 /* Pods_iDine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF7C847D5A1265FF7E8652A /* Pods_iDine.framework */; };
+		C355838A27D5A34700727873 /* FavoriteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355838927D5A34700727873 /* FavoriteDB.swift */; };
 		C77FAAB327CF267400A7EF42 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FAAB227CF267400A7EF42 /* ItemRow.swift */; };
 		C77FAAB527CF348700A7EF42 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FAAB427CF348700A7EF42 /* ItemDetail.swift */; };
 		C77FAAB727CF481A00A7EF42 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FAAB627CF481A00A7EF42 /* OrderView.swift */; };
@@ -29,6 +30,7 @@
 		0D852948034DC943DEF2201A /* Pods-iDine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDine.release.xcconfig"; path = "Target Support Files/Pods-iDine/Pods-iDine.release.xcconfig"; sourceTree = "<group>"; };
 		35E69839AED5796B80D4F512 /* Pods-iDine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDine.debug.xcconfig"; path = "Target Support Files/Pods-iDine/Pods-iDine.debug.xcconfig"; sourceTree = "<group>"; };
 		8AF7C847D5A1265FF7E8652A /* Pods_iDine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C355838927D5A34700727873 /* FavoriteDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDB.swift; sourceTree = "<group>"; };
 		C77FAAB227CF267400A7EF42 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		C77FAAB427CF348700A7EF42 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		C77FAAB627CF481A00A7EF42 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
@@ -73,7 +75,6 @@
 				35E69839AED5796B80D4F512 /* Pods-iDine.debug.xcconfig */,
 				0D852948034DC943DEF2201A /* Pods-iDine.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -110,6 +111,7 @@
 				C794E41827CF02850074076A /* Menu.swift */,
 				C794E3A527CF02840074076A /* Order.swift */,
 				C77FAABC27D04D8200A7EF42 /* Favorite.swift */,
+				C355838927D5A34700727873 /* FavoriteDB.swift */,
 				C794E39A27CF02390074076A /* Assets.xcassets */,
 				C794E41727CF02850074076A /* menu.json */,
 				C794E39C27CF02390074076A /* Preview Content */,
@@ -252,6 +254,7 @@
 				C77FAAB327CF267400A7EF42 /* ItemRow.swift in Sources */,
 				C794E41927CF02850074076A /* Helper.swift in Sources */,
 				C794E48C27CF02850074076A /* Menu.swift in Sources */,
+				C355838A27D5A34700727873 /* FavoriteDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
